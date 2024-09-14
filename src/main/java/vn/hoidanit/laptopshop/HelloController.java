@@ -9,7 +9,11 @@ public class HelloController {
 
     @GetMapping("/")
     public String index() {
-        return "Hello Spring hi";
+        return "Hello Word!";
     }
 
+    @GetMapping("/admin")
+    public String adminPage() {
+        return "Only admin can access this page!";
+    }
 }
