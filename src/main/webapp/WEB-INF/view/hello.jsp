@@ -15,13 +15,12 @@
 
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-            <!-- <link href="/css/demo.css" rel="stylesheet"> -->
+            <link href="/css/demo.css" rel="stylesheet">
 
         </head>
 
         <body>
-            hello from jsp
-            <button class="btn btn-access">SUBMIT</button>
+            <button>SUBMIT</button>
         </body>
 
         </html>
