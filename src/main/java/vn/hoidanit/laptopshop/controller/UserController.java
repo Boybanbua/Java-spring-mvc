@@ -4,11 +4,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
 import vn.hoidanit.laptopshop.domain.User;
 import vn.hoidanit.laptopshop.service.UserService;
-
 import org.springframework.web.bind.annotation.ModelAttribute;
+import java.util.List;
 
 @Controller
 public class UserController {
@@ -21,8 +20,8 @@ public class UserController {
 
     @RequestMapping("/")
     public String getHomePage(Model model) {
-        model.addAttribute("eric", "test");
-        model.addAttribute("hoidanit", "from controller with model");
+        List<User> arrUsers = this.userService.getAllUsersByEmail("1@gmail.com");
+        System.out.println(arrUsers);
         return "hello";
     }
 
